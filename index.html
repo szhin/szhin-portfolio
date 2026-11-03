@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>szhin — Web portfolio của riêng bạn, chỉ từ 49k</title>
+  <meta name="description" content="Làm trang web portfolio cá nhân dễ thương hoặc tối giản, xem mượt trên điện thoại, có link riêng để gắn bio TikTok, Instagram. Giá ưu đãi chỉ từ 49k.">
+  <meta name="theme-color" content="#fff7f4">
+  <!-- Sau khi deploy: đổi og:image / og:url thành địa chỉ đầy đủ (vd. https://ten-trang.netlify.app/assets/og.jpg) để Facebook, Zalo hiện ảnh. -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="vi_VN">
+  <meta property="og:title" content="szhin — Web portfolio của riêng bạn, chỉ từ 49k">
+  <meta property="og:description" content="Mẫu dễ thương cho học sinh hoặc tối giản cho các bạn nam. Xem mượt trên điện thoại, có link riêng để chia sẻ.">
+  <meta property="og:image" content="assets/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="preload" as="image" href="assets/yen-m-open.webp" imagesrcset="assets/yen-m-open-270.webp 270w, assets/yen-m-open.webp 540w" imagesizes="(min-width: 960px) 240px, 46vw" fetchpriority="high">
+  <link rel="preload" href="fonts.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="fonts.css"></noscript>
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <svg width="0" height="0" class="sprite" aria-hidden="true" focusable="false">
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-9.6-9.3C.9 8.3 3 4.5 6.6 4.5c2.1 0 3.6 1.2 4.4 2.6.8-1.4 2.3-2.6 4.4-2.6 3.6 0 5.7 3.8 4.2 7.2C19.5 16.4 12 21 12 21z"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 2.5l2.8 6 6.5.7-4.9 4.4 1.4 6.4L12 16.8 6.2 20l1.4-6.4L2.7 9.2l6.5-.7z"/></symbol>
+    <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M12 1c.9 6 4.9 10 11 11-6.1 1-10.1 5-11 11-.9-6-4.9-10-11-11 6.1-1 10.1-5 11-11z"/></symbol>
+    <symbol id="i-bow" viewBox="0 0 32 20"><path d="M16 8.5C12 2 3 -1 2 5s6 11 14 5c8 6 15 1 14-5S20 2 16 8.5z"/><circle cx="16" cy="9.5" r="3"/><path d="M14 12l-4 8 3-1 2 1.5zM18 12l4 8-3-1-2 1.5z"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M7 17L17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-down" viewBox="0 0 24 24"><path d="M12 5v14M6 13l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2.5"/><path d="M5 15V6a2 2 0 0 1 2-2h9"/></g></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M4 7l8 6 8-6"/></g></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <!-- tính năng -->
+    <symbol id="i-phone" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2.5" width="12" height="19" rx="3"/><path d="M10.5 18.5h3"/></g></symbol>
+    <symbol id="i-link" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M10 14a4.5 4.5 0 0 0 6.4 0l3.2-3.2a4.5 4.5 0 0 0-6.4-6.4L12 5.6"/><path d="M14 10a4.5 4.5 0 0 0-6.4 0l-3.2 3.2a4.5 4.5 0 0 0 6.4 6.4l1.2-1.2"/></g></symbol>
+    <symbol id="i-image" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="3"/><circle cx="9" cy="10" r="1.8"/><path d="M21 16l-5-5-9 9"/></g></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></g></symbol>
+    <symbol id="i-wand" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20L15 9M13 7l4 4"/><path d="M18 2.5v3M16.5 4h3M20.5 9v2.4M19.3 10.2h2.4M9 2.5v2M8 3.5h2"/></g></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.2-4 4.3-6 8-6s6.8 2 8 6"/></g></symbol>
+    <!-- mạng xã hội -->
+    <symbol id="i-tiktok" viewBox="0 0 24 24"><path d="M16.6 2h-3.4v13.1a2.9 2.9 0 1 1-2.9-2.9c.3 0 .6 0 .9.1V8.8a6.4 6.4 0 1 0 5.4 6.3V8.6a8.1 8.1 0 0 0 4.4 1.3V6.5a4.4 4.4 0 0 1-4.4-4.5z"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5.5"/><circle cx="12" cy="12" r="4.2"/></g><circle cx="17.4" cy="6.6" r="1.3"/></symbol>
+    <symbol id="i-threads" viewBox="0 0 24 24"><path d="M17.3 11.2l-.4-.2c-.2-3.3-2-5.2-5-5.2-1.9 0-3.4.8-4.3 2.2l1.6 1.1c.7-1 1.7-1.3 2.7-1.3 1 0 1.8.3 2.3.9.4.4.6 1 .7 1.7-.9-.1-1.8-.2-2.8-.1-2.8.2-4.6 1.8-4.5 4.1.1 1.2.6 2.2 1.6 2.8.8.5 1.9.8 3 .7 1.5-.1 2.6-.6 3.4-1.6.6-.7 1-1.7 1.1-2.9.7.4 1.3 1 1.5 1.7.5 1.1.5 3-1 4.5-1.3 1.3-2.9 1.9-5.3 1.9-2.6 0-4.6-.9-5.9-2.5C5.6 17.2 5 15 5 12.2s.6-5 1.8-6.6C8.1 4 10.1 3.1 12.7 3.1c2.6 0 4.6.9 6 2.5.7.8 1.2 1.8 1.5 2.9l1.9-.5c-.4-1.4-1-2.7-1.9-3.7C18.4 2.2 15.9 1.1 12.7 1.1h-.1c-3.2 0-5.6 1.1-7.3 3.2C3.8 6.2 3 8.8 3 12.2s.8 6 2.3 7.9c1.7 2.1 4.1 3.2 7.3 3.2h.1c2.8 0 4.8-.7 6.5-2.4 2.2-2.2 2.1-5 1.4-6.6-.5-1.2-1.5-2.2-2.9-2.9zm-4.8 4.6c-1.2.1-2.4-.5-2.5-1.5 0-.8.6-1.7 2.5-1.8h.6c.7 0 1.3.1 1.9.2-.2 2.6-1.4 3-2.5 3.1z"/></symbol>
+    <symbol id="i-facebook" viewBox="0 0 24 24"><path d="M13.5 21.5v-7.8h2.6l.4-3.1h-3V8.7c0-.9.3-1.5 1.5-1.5h1.6V4.4c-.3 0-1.2-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4v2.3H7.8v3.1h2.6v7.8z"/></symbol>
+  </svg>
+
+  <a class="skip" href="#mau">Bỏ qua tới phần mẫu web</a>
+
+  <header class="nav" data-nav>
+    <a class="brand" href="#top">
+      <span class="brand__mark" aria-hidden="true">s</span>
+      <span class="brand__name">szhin portfolio</span>
+    </a>
+    <nav class="nav__links" aria-label="Mục lục">
+      <a href="#mau">Mẫu web</a>
+      <a href="#co-gi">Có gì?</a>
+      <a href="#bang-gia">Bảng giá</a>
+      <a href="#lien-he">Liên hệ</a>
+    </nav>
+    <a class="btn btn--dark btn--sm" href="#lien-he">Đặt web <span class="nav__price">49k</span></a>
+  </header>
+
+  <main id="top">
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="hero__copy">
+        <p class="badge intro"><svg class="badge__icon"><use href="#i-sparkle"/></svg> Giá ưu đãi · chỉ từ <strong>49k</strong></p>
+        <h1 class="hero__title intro">
+          Trang web portfolio
+          <span class="hero__accent">của riêng bạn
+            <svg class="squiggle" viewBox="0 0 300 18" preserveAspectRatio="none" aria-hidden="true"><path d="M3 12c25-9 45-9 70 0s45 9 70 0 45-9 70 0 45 9 84-2"/></svg>
+          </span>
+        </h1>
+        <p class="hero__lead intro">Một đường link xinh xắn kể bạn là ai, bạn thích gì và bạn đã làm được gì — xem mượt trên điện thoại, gắn lên bio TikTok, Instagram hay gửi kèm CV đều đẹp.</p>
+        <div class="hero__cta intro">
+          <a class="btn btn--dark" href="#mau">Xem 2 mẫu web <svg class="btn__icon"><use href="#i-down"/></svg></a>
+          <a class="btn btn--ghost" href="#lien-he">Liên hệ đặt web</a>
+        </div>
+        <ul class="hero__chips intro" aria-label="Điểm nổi bật">
+          <li><svg><use href="#i-phone"/></svg> Đẹp trên điện thoại</li>
+          <li><svg><use href="#i-link"/></svg> Link riêng</li>
+          <li><svg><use href="#i-globe"/></svg> Song ngữ</li>
+        </ul>
+      </div>
+
+      <div class="hero__stage" aria-hidden="true">
+        <div class="hero__blob"></div>
+        <div class="phone phone--hero phone--a">
+          <div class="phone__screen"><img src="assets/yen-m-open.webp" srcset="assets/yen-m-open-270.webp 270w, assets/yen-m-open.webp 540w" sizes="(min-width: 960px) 240px, 46vw" width="540" height="1169" alt="" fetchpriority="high"></div>
+        </div>
+        <div class="phone phone--hero phone--b">
+          <div class="phone__screen"><img src="assets/geo-m-1.webp" srcset="assets/geo-m-1-270.webp 270w, assets/geo-m-1.webp 540w" sizes="(min-width: 960px) 240px, 46vw" width="540" height="1169" alt=""></div>
+        </div>
+        <div class="stamp"><span class="stamp__small">chỉ từ</span><span class="stamp__big">49k</span></div>
+        <svg class="deco deco--heart float"><use href="#i-heart"/></svg>
+        <svg class="deco deco--star float float--slow"><use href="#i-star"/></svg>
+        <svg class="deco deco--sparkle float"><use href="#i-sparkle"/></svg>
+        <svg class="deco deco--sparkle2 float float--slow"><use href="#i-sparkle"/></svg>
+      </div>
+    </section>
+
+    <!-- ============ RIBBON ============ -->
+    <div class="ribbon" aria-hidden="true">
+      <div class="ribbon__track" data-play>
+        <span>Portfolio cá nhân</span><svg><use href="#i-heart"/></svg>
+        <span>Dễ thương</span><svg><use href="#i-sparkle"/></svg>
+        <span>Tối giản</span><svg><use href="#i-star"/></svg>
+        <span>Song ngữ</span><svg><use href="#i-heart"/></svg>
+        <span>Link riêng</span><svg><use href="#i-sparkle"/></svg>
+        <span>Chỉ từ 49k</span><svg><use href="#i-star"/></svg>
+        <span>Portfolio cá nhân</span><svg><use href="#i-heart"/></svg>
+        <span>Dễ thương</span><svg><use href="#i-sparkle"/></svg>
+        <span>Tối giản</span><svg><use href="#i-star"/></svg>
+        <span>Song ngữ</span><svg><use href="#i-heart"/></svg>
+        <span>Link riêng</span><svg><use href="#i-sparkle"/></svg>
+        <span>Chỉ từ 49k</span><svg><use href="#i-star"/></svg>
+      </div>
+    </div>
+
+    <!-- ============ MẪU WEB ============ -->
+    <section class="section" id="mau" aria-labelledby="mau-title">
+      <header class="section__head reveal">
+        <p class="kicker">Mẫu có sẵn</p>
+        <h2 class="section__title" id="mau-title">Chọn một phong cách,<br> mình lo phần còn lại</h2>
+        <p class="section__lead">Hai trang dưới đây là web thật đang chạy. Bấm vào để xem và bấm thử như người xem trang của bạn.</p>
+      </header>
+
+      <!-- Mẫu 01 · dễ thương -->
+      <article class="sample sample--cute reveal" aria-labelledby="cute-title">
+        <span class="tape tape--l" aria-hidden="true"></span>
+        <span class="tape tape--r" aria-hidden="true"></span>
+        <img class="sticker sticker--squirrel" src="assets/sticker-squirrel.webp" width="240" height="258" alt="" loading="lazy" decoding="async">
+        <img class="sticker sticker--notes" src="assets/sticker-notes.webp" width="234" height="268" alt="" loading="lazy" decoding="async">
+        <svg class="sticker sticker--bow" aria-hidden="true"><use href="#i-bow"/></svg>
+        <svg class="sticker sticker--heart" aria-hidden="true"><use href="#i-heart"/></svg>
+
+        <a class="devices" href="https://yengoc.netlify.app/" target="_blank" rel="noopener" aria-label="Bấm để xem trang thật: mẫu dễ thương Yen Ngoc (mở tab mới)">
+          <div class="laptop">
+            <div class="laptop__screen slides" data-play>
+              <img src="assets/yen-d-1.webp" srcset="assets/yen-d-1-600.webp 600w, assets/yen-d-1.webp 1200w" sizes="(min-width: 960px) 480px, 80vw" width="1200" height="750" alt="" loading="lazy" decoding="async">
+              <img src="assets/yen-d-2.webp" srcset="assets/yen-d-2-600.webp 600w, assets/yen-d-2.webp 1200w" sizes="(min-width: 960px) 480px, 80vw" width="1200" height="750" alt="" loading="lazy" decoding="async">
+              <img src="assets/yen-d-3.webp" srcset="assets/yen-d-3-600.webp 600w, assets/yen-d-3.webp 1200w" sizes="(min-width: 960px) 480px, 80vw" width="1200" height="750" alt="" loading="lazy" decoding="async">
+            </div>
+            <div class="laptop__base"></div>
+          </div>
+          <div class="phone phone--sm">
+            <div class="phone__screen slides slides--offset" data-play>
+              <img src="assets/yen-m-1.webp" srcset="assets/yen-m-1-270.webp 270w, assets/yen-m-1.webp 540w" sizes="(min-width: 960px) 130px, 22vw" width="540" height="1169" alt="" loading="lazy" decoding="async">
+              <img src="assets/yen-m-2.webp" srcset="assets/yen-m-2-270.webp 270w, assets/yen-m-2.webp 540w" sizes="(min-width: 960px) 130px, 22vw" width="540" height="1169" alt="" loading="lazy" decoding="async">
+              <img src="assets/yen-m-3.webp" srcset="assets/yen-m-3-270.webp 270w, assets/yen-m-3.webp 540w" sizes="(min-width: 960px) 130px, 22vw" width="540" height="1169" alt="" loading="lazy" decoding="async">
+            </div>
+          </div>
+          <span class="devices__hint">Bấm để xem trang thật <svg><use href="#i-arrow"/></svg></span>
+        </a>
+
+        <div class="sample__body">
+          <p class="sample__tag"><span>Mẫu 01</span> dễ thương · học sinh</p>
+          <h3 class="sample__title" id="cute-title">Sổ scrapbook <span>hồng xinh</span></h3>
+          <p class="sample__desc">Như một cuốn sổ tay dán sticker: mở phong thư để vào trang, lật sổ đọc lời giới thiệu, mở từng hộp kỷ niệm. Hợp với các bạn học sinh, sinh viên thích sự đáng yêu.</p>
+          <ul class="ticks">
+            <li><svg><use href="#i-heart"/></svg> Bìa phong thư mở ra như thiệp</li>
+            <li><svg><use href="#i-heart"/></svg> Sổ giới thiệu nhiều ngôn ngữ (Anh, Việt, Tây Ban Nha, Nhật)</li>
+            <li><svg><use href="#i-heart"/></svg> Hộp “treasures”: giải thưởng, cosplay, nhạc, phim yêu thích</li>
+            <li><svg><use href="#i-heart"/></svg> Sticker, nhạc nền và chuyển động dễ thương</li>
+          </ul>
+          <a class="btn btn--cute" href="https://yengoc.netlify.app/" target="_blank" rel="noopener">Xem trang thật <svg class="btn__icon"><use href="#i-arrow"/></svg></a>
+          <p class="sample__url">yengoc.netlify.app</p>
+        </div>
+      </article>
+
+      <!-- Mẫu 02 · tối giản -->
+      <article class="sample sample--clean reveal" aria-labelledby="clean-title">
+        <a class="devices" href="https://geoffreypham.netlify.app/" target="_blank" rel="noopener" aria-label="Bấm để xem trang thật: mẫu tối giản Geoffrey Pham (mở tab mới)">
+          <div class="laptop">
+            <div class="laptop__screen slides" data-play>
+              <img src="assets/geo-d-1.webp" srcset="assets/geo-d-1-600.webp 600w, assets/geo-d-1.webp 1200w" sizes="(min-width: 960px) 480px, 80vw" width="1200" height="750" alt="" loading="lazy" decoding="async">
+              <img src="assets/geo-d-2.webp" srcset="assets/geo-d-2-600.webp 600w, assets/geo-d-2.webp 1200w" sizes="(min-width: 960px) 480px, 80vw" width="1200" height="750" alt="" loading="lazy" decoding="async">
+              <img src="assets/geo-d-3.webp" srcset="assets/geo-d-3-600.webp 600w, assets/geo-d-3.webp 1200w" sizes="(min-width: 960px) 480px, 80vw" width="1200" height="750" alt="" loading="lazy" decoding="async">
+            </div>
+            <div class="laptop__base"></div>
+          </div>
+          <div class="phone phone--sm">
+            <div class="phone__screen slides slides--offset" data-play>
+              <img src="assets/geo-m-1.webp" srcset="assets/geo-m-1-270.webp 270w, assets/geo-m-1.webp 540w" sizes="(min-width: 960px) 130px, 22vw" width="540" height="1169" alt="" loading="lazy" decoding="async">
+              <img src="assets/geo-m-2.webp" srcset="assets/geo-m-2-270.webp 270w, assets/geo-m-2.webp 540w" sizes="(min-width: 960px) 130px, 22vw" width="540" height="1169" alt="" loading="lazy" decoding="async">
+              <img src="assets/geo-m-3.webp" srcset="assets/geo-m-3-270.webp 270w, assets/geo-m-3.webp 540w" sizes="(min-width: 960px) 130px, 22vw" width="540" height="1169" alt="" loading="lazy" decoding="async">
+            </div>
+          </div>
+          <span class="devices__hint">Bấm để xem trang thật <svg><use href="#i-arrow"/></svg></span>
+        </a>
+
+        <div class="sample__body">
+          <p class="sample__tag"><span>Mẫu 02</span> tối giản · hiện đại</p>
+          <h3 class="sample__title" id="clean-title">Gọn gàng, <span>chuyên nghiệp</span></h3>
+          <p class="sample__desc">Bố cục sạch, chữ rõ, màu gradient nhẹ. Hợp cho các bạn nam, sinh viên IT hay ai muốn một trang giới thiệu nghiêm túc để gửi kèm CV.</p>
+          <ul class="ticks">
+            <li><svg><use href="#i-check"/></svg> Song ngữ Việt – Anh, đổi bằng 1 chạm</li>
+            <li><svg><use href="#i-check"/></svg> Giao diện sáng / tối</li>
+            <li><svg><use href="#i-check"/></svg> Robot 3D nhỏ tương tác được</li>
+            <li><svg><use href="#i-check"/></svg> Kỹ năng, dự án, hành trình học tập</li>
+          </ul>
+          <a class="btn btn--clean" href="https://geoffreypham.netlify.app/" target="_blank" rel="noopener">Xem trang thật <svg class="btn__icon"><use href="#i-arrow"/></svg></a>
+          <p class="sample__url">geoffreypham.netlify.app</p>
+        </div>
+      </article>
+    </section>
+
+    <!-- ============ CÓ GÌ ============ -->
+    <section class="section section--tint" id="co-gi" aria-labelledby="co-gi-title">
+      <header class="section__head reveal">
+        <h2 class="section__title" id="co-gi-title">Trang web của bạn có gì?</h2>
+      </header>
+      <ul class="features">
+        <li class="feature reveal">
+          <span class="feature__icon"><svg><use href="#i-user"/></svg></span>
+          <h3>Nội dung là của bạn</h3>
+          <p>Ảnh, lời giới thiệu, thành tích, dự án, sở thích — mình sắp xếp lại cho gọn và đẹp.</p>
+        </li>
+        <li class="feature reveal">
+          <span class="feature__icon"><svg><use href="#i-link"/></svg></span>
+          <h3>Link riêng để chia sẻ</h3>
+          <p>Gắn lên bio TikTok, Instagram, Facebook hoặc gửi kèm CV, hồ sơ học bổng.</p>
+        </li>
+        <li class="feature reveal">
+          <span class="feature__icon"><svg><use href="#i-image"/></svg></span>
+          <h3>Ảnh xem trước khi gửi link</h3>
+          <p>Gửi qua Messenger, Zalo sẽ hiện ảnh và tên của bạn, không phải một đường link trơn.</p>
+        </li>
+        <li class="feature reveal">
+          <span class="feature__icon"><svg><use href="#i-globe"/></svg></span>
+          <h3>Song ngữ hoặc nhiều ngôn ngữ</h3>
+          <p>Tiếng Việt, tiếng Anh… người xem tự chọn ngôn ngữ mình đọc.</p>
+        </li>
+        <li class="feature reveal">
+          <span class="feature__icon"><svg><use href="#i-wand"/></svg></span>
+          <h3>Chuyển động mượt mà</h3>
+          <p>Hiệu ứng nhẹ nhàng cho trang có hồn, vẫn được tối ưu để tải nhanh.</p>
+        </li>
+        <li class="feature reveal">
+          <span class="feature__icon"><svg><use href="#i-phone"/></svg></span>
+          <h3>Đẹp trên điện thoại</h3>
+          <p>Phần lớn người xem mở link bằng điện thoại, nên trang được làm cho màn hình nhỏ trước tiên.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ============ BẢNG GIÁ ============ -->
+    <section class="section" id="bang-gia" aria-labelledby="gia-title">
+      <div class="ticket reveal">
+        <div class="ticket__price">
+          <p class="kicker">Giá ưu đãi</p>
+          <h2 class="ticket__title" id="gia-title"><span class="ticket__from">chỉ từ</span> <span class="ticket__num">49k</span></h2>
+          <p class="ticket__note">Là có ngay trang web portfolio của riêng bạn. Giá cuối tuỳ mẫu và yêu cầu — nhắn mình để được báo giá nhé.</p>
+          <a class="btn btn--light" href="#lien-he">Nhắn mình ngay <svg class="btn__icon"><use href="#i-down"/></svg></a>
+        </div>
+        <div class="ticket__steps">
+          <h3 class="ticket__steps-title">Đặt web trong 3 bước</h3>
+          <ol class="steps">
+            <li><span class="steps__n">1</span><div><strong>Chọn mẫu</strong><p>Dễ thương hay tối giản — hoặc kể mình nghe ý tưởng của bạn.</p></div></li>
+            <li><span class="steps__n">2</span><div><strong>Gửi thông tin</strong><p>Ảnh, tên, lời giới thiệu và những điều bạn muốn khoe.</p></div></li>
+            <li><span class="steps__n">3</span><div><strong>Nhận link</strong><p>Mình gửi bạn link trang web để xem và chia sẻ.</p></div></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ LIÊN HỆ ============ -->
+    <section class="section section--contact" id="lien-he" aria-labelledby="lien-he-title">
+      <div class="contact-grid">
+        <figure class="promo reveal">
+          <div class="phone promo__phone">
+            <div class="phone__screen">
+              <video class="promo__video" src="assets/promo.mp4" poster="assets/promo-poster.webp" width="540" height="960" muted loop playsinline preload="none" aria-label="Video giới thiệu dịch vụ làm web portfolio" data-video></video>
+            </div>
+          </div>
+          <figcaption class="promo__cap">Xem nhanh dịch vụ trong 30 giây</figcaption>
+        </figure>
+        <div class="contact reveal">
+          <svg class="contact__deco contact__deco--a" aria-hidden="true"><use href="#i-sparkle"/></svg>
+          <svg class="contact__deco contact__deco--b" aria-hidden="true"><use href="#i-heart"/></svg>
+          <p class="kicker">Liên hệ</p>
+          <h2 class="section__title" id="lien-he-title">Kết nối với mình nhé!</h2>
+          <p class="contact__lead">Gửi email hoặc nhắn qua mạng xã hội, kèm mẫu bạn thích — mình sẽ trả lời sớm nhất có thể.</p>
+
+          <div class="email">
+            <img class="email__avatar" src="assets/avatar.webp" width="160" height="160" alt="Ảnh đại diện" loading="lazy" decoding="async">
+            <a class="email__addr" href="mailto:ynnori203@gmail.com?subject=%C4%90%E1%BA%B7t%20web%20portfolio">ynnori203@gmail.com</a>
+            <button class="email__copy" type="button" data-copy="ynnori203@gmail.com">
+              <svg><use href="#i-copy"/></svg><span>Sao chép</span>
+            </button>
+          </div>
+
+          <ul class="socials" aria-label="Mạng xã hội">
+            <li><a class="social social--tiktok" href="https://www.tiktok.com/@szhin_portfolio" target="_blank" rel="noopener me">
+              <span class="social__icon"><svg><use href="#i-tiktok"/></svg></span><span class="social__text"><strong>TikTok</strong><span>@szhin_portfolio</span></span></a></li>
+            <li><a class="social social--instagram" href="https://www.instagram.com/szhin_portfolio/" target="_blank" rel="noopener me">
+              <span class="social__icon"><svg><use href="#i-instagram"/></svg></span><span class="social__text"><strong>Instagram</strong><span>@szhin_portfolio</span></span></a></li>
+            <li><a class="social social--threads" href="https://www.threads.com/@szhin_portfolio" target="_blank" rel="noopener me">
+              <span class="social__icon"><svg><use href="#i-threads"/></svg></span><span class="social__text"><strong>Threads</strong><span>@szhin_portfolio</span></span></a></li>
+            <li><a class="social social--facebook" href="https://www.facebook.com/szhinportfolio/" target="_blank" rel="noopener me">
+              <span class="social__icon"><svg><use href="#i-facebook"/></svg></span><span class="social__text"><strong>Facebook</strong><span>@szhinportfolio</span></span></a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 szhin · Web portfolio cá nhân</p>
+    <a href="#top">Lên đầu trang ↑</a>
+  </footer>
+
+  <p class="toast" data-toast role="status" aria-live="polite"></p>
+</body>
+</html>
